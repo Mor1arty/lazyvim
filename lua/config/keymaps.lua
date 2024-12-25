@@ -12,3 +12,6 @@ end
 
 -- Change leader to a comma
 map("i", "jk", "<Esc>")
+
+vim.api.nvim_set_keymap("n", "<C-h>", ":BufferLineCyclePrev<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<C-l>", ":BufferLineCycleNext<CR>", { noremap = true })
